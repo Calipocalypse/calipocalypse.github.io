@@ -6,19 +6,21 @@
 <body>
 <div class="content">
 <div>
-<h2 class="post"> POST | Tworzy koszt</h2>
+<h1>Logowanie</h1>
+<h2 class="post"> POST | Logowanie</h2>
+	<div>
 	<div>
 		<table class="endpoint">
 		  <tr>
-			<td class="endpoint-bold-post" colspan="3">Tworzy koszt</th>
+			<td class="endpoint-bold-post" colspan="3">Logowanie</th>
 		  </tr>
 		  <tr>
 			<td class="endpoint-bold-post">Token</td>
-			<td class="endpoint-content" colspan="2">Wymagany</td>
+			<td class="endpoint-content" colspan="2">-</td>
 		  </tr>
 		  <tr>
 			<td class="endpoint-bold-post">Role</td>
-			<td class="endpoint-content" colspan="2">Administrator, Operator</td>
+			<td class="endpoint-content" colspan="2">-</td>
 		  </tr>
 		  <tr>
 			<td class="endpoint-bold-post">Metoda</td>
@@ -26,7 +28,7 @@
 		  </tr>
 		  <tr>
 			<td class="endpoint-bold-post">URL</td>
-			<td class="endpoint-content" colspan="2">[host]/costs</td>
+			<td class="endpoint-content" colspan="2">[host]/login</td>
 		  </tr>
 		</table>
 		<table class="endpoint">
@@ -38,16 +40,21 @@
 			<td class="endpoint-content" colspan="2">
 <pre>
 {
-	"Name": "Koszt 1",
-	"CostValue": "47.99"
+	"Username": "Maciej", 
+	"Password": "Silnehaslo1!"
 }
 </pre>
 </td>
 			<td class="endpoint-content" colspan="2">
+<pre>
+{
+	"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.6Ik1h...",
+	"role": "Administrator",
+	"name": "Maciej"
+}</pre>
 			</td>
 		  </tr>
 		</table>
-		  <BR>
 		  <BR>
 		  <BR>
 		  
@@ -65,8 +72,16 @@
 			<td style="width: 100%;" class="endpoint-content"></td>
 		  </tr>
 		 </table>
+		 <table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-post">Status</td>
+			<td class="endpoint-content">404 NotFound</td>
+			<td style="width: 100%;" class="endpoint-content">"User of name Maciej doesn't exist or password doesn't match"</td>
+		  </tr>
+		 </table>
 		 
 	</div>
+<br><br>
 </div>
 </div>
 

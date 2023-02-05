@@ -1,0 +1,74 @@
+<html>
+<head>
+<link type="text/css" rel="Stylesheet" href="page.css" />
+<link type="text/css" rel="Stylesheet" href="endpoints.css" />
+</head>
+<body>
+<div class="content">
+<div>
+<h2 class="patch"> PATCH | Zmienia hasło użytkownika</h2>
+	<div>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-patch" colspan="3">Zmienia hasło użytkownika</th>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-patch">Token</td>
+			<td class="endpoint-content" colspan="2">Wymagany</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-patch">Role</td>
+			<td class="endpoint-content" colspan="2">Administrator, Operator*</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-patch">Metoda</td>
+			<td class="endpoint-content" colspan="2">PATCH</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-patch">URL</td>
+			<td class="endpoint-content" colspan="2">[host]/users/[username]</td>
+		  </tr>
+		</table>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-patch">Body [JSON]</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">
+			<pre>
+{
+	"Password": "NoweSilneHaslo1@"
+}</pre>
+			</td>
+		  </tr>
+		</table>
+		  <BR>
+		  <h4>* W przypadku konta operatorskiego - można zmieniać wyłącznie hasło na zalogowanym koncie </h4>
+			<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-patch">Status</td>
+			<td class="endpoint-content">200 OK</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		  </table>
+		  </table>
+			<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-patch">Status</td>
+			<td class="endpoint-content">400 BadReuqest</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		  </table>
+			<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-patch">Status</td>
+			<td class="endpoint-content">401 Unauthorized</td>
+			<td style="width: 100%;" class="endpoint-content">You can't change other users passwords. Only yours is avaible.</td>
+		  </tr>
+	</div>
+</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+<head>
+<link type="text/css" rel="Stylesheet" href="page.css" />
+<link type="text/css" rel="Stylesheet" href="endpoints.css" />
+</head>
+<body>
+<div class="content">
+<div>
+<h2> GET | Zwraca wszystkich użytkowników</h2>
+	<div>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold" colspan="3">Zwraca wszystkie notatki</th>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Token</td>
+			<td class="endpoint-content" colspan="2">Wymagany</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Role</td>
+			<td class="endpoint-content" colspan="2">Administrator, Operator</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Metoda</td>
+			<td class="endpoint-content" colspan="2">GET</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">URL</td>
+			<td class="endpoint-content" colspan="2">[host]/users</td>
+		  </tr>
+		</table>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Response [JSON]</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">
+			<pre>
+[
+	{
+		"name": "Maciej",
+		"role": "Administrator"
+	},
+	{
+		"name": "Operator",
+		"role": "Operator"
+	}
+]</pre>
+			</td>
+		  </tr>
+		</table>
+		  <BR>
+		  <BR>
+		  <BR>
+			<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Status</td>
+			<td class="endpoint-content">200 OK</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		  </table>
+	</div>
+</div>
+</div>
+
+
+</body>
+</html>

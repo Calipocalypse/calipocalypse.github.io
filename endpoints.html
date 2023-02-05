@@ -1,0 +1,39 @@
+<html>
+<head>
+<link type="text/css" rel="Stylesheet" href="page.css" />
+<link type="text/css" rel="Stylesheet" href="endpoints.css" />
+</head>
+<body>
+<div class="content">
+<h1>Endpointy</h1>
+
+<h3> CRUD </h3>
+Jest to akronim słów create, remove, update, delete. Są to podstawowe operacje możliwe do wykonywania na zasobach. W protokole HTTP wyróżnia się głównie: <Br><Br>
+<text class="dwa"> GET </text>
+Umownie służy do pozyskiwania dostępu do pewnego zasobu <Br><Br>
+<text class="fiolet"> POST </text>
+Umownie służy do wysyłania informacji do serwera <Br><Br>
+<text class="cztery"> PATCH </text>
+Umownie służy do uaktualniania istniejących zasobów <Br><Br>
+<text class="piec"> DEL </text>
+Umownie służy do kasacji istniejących zasobów <Br><Br>
+
+<h3> Wykorzystywane kody odpowiedzi HTTP w projekcie</h3>
+Kody odpowiedzi, obok zwróconych DTO, to informacja dla frontendu o wyniku danego żądania. <Br><Br>
+<text class="dwa"> 200 OK </text>
+Jest to odpowiedź zwracana za każdym razem, gdy żądanie spełni oczekiwany wynik <Br><Br>
+<text class="cztery"> 400 Bad Request </text>
+Jest to odpowiedź zwracana w przypadku złego sformułowania żądania (najczęściej towarzyszy temu komunikat zwrotny) <Br><Br>
+<text class="cztery"> 401 Unauthorized </text>
+Jest to odpowiedź w przypadku stwierdzenia ważnośći tokena JWT <Br><Br>
+<text class="cztery"> 403 Forbidden </text>
+Jest to odpowiedź w przypadku braku uprawnień do zasobu <Br><Br>
+<text class="cztery"> 404 Not Found </text>
+Jest to odpowiedź w przypadku stwierdzenia braku istnienia lub braku danych dla danego żądania <Br><Br>
+<text class="cztery"> 415 Unsupported Media Type </text>
+Jest to odpowiedź w przypadku wysyłania błędnego DTO (data transfer object) <Br><Br>
+<text class="piec"> 500 Internal Server Error </text>
+Jest to odpowiedź w przypadku wewnętrznego błędu serwera (należy skontaktować się z developerem backendu) <Br><Br>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.token-header
+{
+	background-color: #FF780022;
+	width: fit-content;
+	padding: 15px;
+	border-radius: 15px;
+	border-width: 2px;
+	border-color: orange;
+	border-style: solid;
+}
+
+.token-payload
+{
+	background-color: #FF00C422; 
+	width: fit-content;
+	padding: 15px;
+	border-radius: 15px;
+	border-width: 2px;
+	border-color: purple;
+	border-style: solid;
+}
+
+.token-signature
+{
+	background-color: #FF005822;
+	width: fit-content;
+	padding: 15px;
+	border-radius: 15px;
+	border-width: 2px;
+	border-color: #FF0058;
+	border-style: solid;
+}

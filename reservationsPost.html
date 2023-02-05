@@ -1,0 +1,96 @@
+<html>
+<head>
+<link type="text/css" rel="Stylesheet" href="page.css" />
+<link type="text/css" rel="Stylesheet" href="endpoints.css" />
+</head>
+<body>
+<div class="content">
+<div>
+<h2 class="post"> POST | Tworzy rezerwację</h2>
+	<div>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-post" colspan="3">Tworzy rezerwację</th>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-post">Token</td>
+			<td class="endpoint-content" colspan="2">Wymagany</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-post">Role</td>
+			<td class="endpoint-content" colspan="2">Administrator, Operator</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-post">Metoda</td>
+			<td class="endpoint-content" colspan="2">POST</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-post">URL</td>
+			<td class="endpoint-content" colspan="2">[host]/reservations</td>
+		  </tr>
+		</table>
+		<table class="endpoint">
+		  <tr>
+			<td colspan="2" class="endpoint-bold-post">Body [JSON] (Wersja minimum)</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content" colspan="2">
+<pre>
+{
+	"PoolTableId": "88064d41-8cb1-4d71-8f73-57c347480911",
+	"BookerName": "Johny K Asteroid3",
+	"StartDate": "17/12/2022 12:55",
+	"EndDate": "17/12/2022 15:55"
+}
+</pre>
+</td>
+		  </tr>
+		</table>		
+		
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-post">Body [JSON]</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">
+<pre>
+{
+	"PoolTableId": "88064d41-8cb1-4d71-8f73-57c347480911",
+	"BookerName": "Johny K Asteroid2",
+	"Email": "johnykasteroid@gmail.com",
+	"PhoneNumber": "690 690 690",
+	"StartDate": "17/12/2022 15:55",
+	"EndDate": "17/12/2022 15:55",
+	"IsPaid": "true",
+	"NoteId": "b16b1773-db71-40b4-b35a-3d4b3b867492"
+}
+</pre>
+</td>
+		  </tr>
+		</table>
+		  <BR>
+		  <BR>
+		  <BR>
+		  
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-post">Status</td>
+			<td class="endpoint-content">200 OK</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		 </table>
+		 <table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-post">Status</td>
+			<td class="endpoint-content">400 BadRequest</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		 </table>
+		 
+	</div>
+</div>
+</div>
+
+
+</body>
+</html>

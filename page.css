@@ -1,0 +1,64 @@
+*
+{
+	font-family: Calibri;
+	font-size: 18px;
+}
+
+body
+{
+	color: white;
+}
+
+.content
+{
+	color: white;
+}
+
+h1
+{
+	font-size: 36px;
+}
+
+h2
+{
+	font-size: 30px;
+}
+
+h3
+{
+	font-size: 24px;
+}
+
+.code
+{
+	background-color: #ffaa00aa;
+	color: black;
+	opacity: 1;
+	width: fit-content;
+	padding: 15px;
+	float: right;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FFA50055; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FFA500CC; 
+}
+
+p{
+	font-style: italic;
+}

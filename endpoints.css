@@ -1,0 +1,201 @@
+h1
+{
+	display: inline;
+}
+
+
+.buttons
+{
+	display: inline;
+	display: flex;
+	justify-content: center;
+}
+
+.buttons text
+{
+	text-decoration: none;
+	border-radius: 10px;
+	font-size: 25px;
+	padding: 10px 35px 10px 35px;
+	margin: 20px 0px 0px 20px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+
+.method-button-get
+{
+	border-color: lime;
+	background: #00ff0034;
+}
+
+.method-button-post
+{
+	border-color: #BF40BF;
+	background: #BF40BF33;
+}
+
+.method-button-patch
+{
+	border-color: orange;
+	background: #ffa50033;
+}
+
+.method-button-delete
+{
+	border-color: red;
+	background: #ff000063;
+}
+
+a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.dwa
+{
+	background-color: #00ff0033;
+	width: fit-content;
+	padding: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: lime;
+	border-radius: 7px;
+	margin-right: 15px;
+	margin: 0;
+}
+
+.cztery
+{
+	background-color: #ffa50033;
+	width: fit-content;
+	padding: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: orange;
+	border-radius: 7px;
+	margin-right: 15px;
+	margin: 0;
+}
+
+.fiolet
+{
+	background-color: #BF40BF33;
+	width: fit-content;
+	padding: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #BF40BF;
+	border-radius: 7px;
+	margin-right: 15px;
+	margin: 0;
+}
+
+.piec
+{
+	background-color: #ff000033;
+	width: fit-content;
+	padding: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: red;
+	border-radius: 7px;
+	margin-right: 15px;
+	margin: 0;
+}
+
+.endpoint
+{
+	width: fit-content;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+.endpoint td
+{
+	width: fit-content;
+	padding: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: gray;
+	border-radius: 2px;
+	margin-right: 15px;
+	margin: 0;
+	border: 1px solid;
+	border-color: transparent;
+	margin: 15px;
+	text-align: center;
+}
+
+.endpoint-bold
+{
+	background-color: #00ff0045;
+	font-weight: bold;
+}
+
+.endpoint-bold-post
+{
+	background-color: #BF40BF73;
+	font-weight: bold;
+}
+
+.endpoint-bold-patch
+{
+	background-color: #ffa50063;
+	font-weight: bold;
+}
+
+.endpoint-bold-delete
+{
+	background-color: #ff000063;
+	font-weight: bold;
+}
+
+.endpoint-content
+{
+	background-color: #88888832;
+}
+
+
+pre
+{
+	text-align: left;
+}
+
+h3
+{
+	background-color: #00ff0055;
+	padding: 2px;
+	font-size: 15px;
+}
+
+h2
+{
+	background-color: #00ff0055;
+}
+
+iframe
+{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.post
+{
+	background-color: #BF40BF73;
+}
+
+.patch
+{
+	background-color: #ffa50063;
+}
+
+.delete
+{
+	background-color: #ff000063;
+}

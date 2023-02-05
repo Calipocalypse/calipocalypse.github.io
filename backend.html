@@ -1,0 +1,24 @@
+<html>
+<head>
+<link type="text/css" rel="Stylesheet" href="page.css" />
+</head>
+<body>
+<h1> Backend </h1>
+Jest to dokumentacja struktury backendu systemu zarządzania rezerwacjami dla osoby chcącej zaimplementować go do aplikacji desktopowej lub webowej.
+
+<h1> Serwer ASP </h1>
+Serwer ASP jest swoistym mostem pomiędzy frontendem aplikacji, a serwerem SQL. Frontend nie ma pojęcia o istnieniu serwera SQL. <br> <br>
+Jedynym sposobem na komunikację pomiędzy serwerem ASP a frontendem jest komunikacja za pomocą protokołu HTTPS.
+Tutaj odbywa się proces autoryzacji i dokonywania zmian w stanie aplikacji.
+<h1> Serwer SQL </h1>
+Serwer SQL stanowi magazyn dla stanu aplikacji. Są tutaj przechowywane:
+<ul>
+<li> loginy wraz z hasłami </li>
+<li> stoły (umowna nazwa miejsc do rezerwacji) </li>
+<li> koszty przypisywane do stołów </li>
+<li> rezerwacje wraz z przypisanymi notatkami </li>
+</ul>
+<center><image src="IMG/2.png"/>
+<p>Rys. 1 | Schemat komunikacji całej aplikacji</p></center>
+</body>
+</html>

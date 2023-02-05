@@ -1,0 +1,77 @@
+<html>
+<head>
+<link type="text/css" rel="Stylesheet" href="page.css" />
+<link type="text/css" rel="Stylesheet" href="endpoints.css" />
+</head>
+<body>
+<div class="content">
+<div>
+<h2 class="patch"> PATCH | Modyfikuje konkretny koszt</h2>
+	<div>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-patch" colspan="3">Modyfikuje konkretny koszt</th>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-patch">Token</td>
+			<td class="endpoint-content" colspan="2">Wymagany</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-patch">Role</td>
+			<td class="endpoint-content" colspan="2">Administrator, Operator</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-patch">Metoda</td>
+			<td class="endpoint-content" colspan="2">PATCH</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-patch">URL</td>
+			<td class="endpoint-content" colspan="2">[host]/costs/[id]</td>
+		  </tr>
+		</table>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-patch" colspan="2">Body [Query]</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">Name</td>
+			<td class="endpoint-content">Stolik jeden</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">CostValue</td>
+			<td class="endpoint-content">69.99</td>
+		  </tr>
+		</table>
+		  <BR>
+		  <BR>
+		  <BR>
+		  
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-patch">Status</td>
+			<td class="endpoint-content">200 OK</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		 </table>
+		 <table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-patch">Status</td>
+			<td class="endpoint-content">400 BadRequest</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		 </table>
+		 <table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-patch">Status</td>
+			<td class="endpoint-content">404 NotFound</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		 </table>
+		 
+	</div>
+</div>
+</div>
+
+
+</body>
+</html>

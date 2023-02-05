@@ -1,0 +1,25 @@
+<html>
+<head>
+<link type="text/css" rel="Stylesheet" href="page.css" />
+</head>
+<body>
+<div class="content">
+<h1> Bezpieczeństwo danych </h1>
+
+<h3> Bezpieczeństwo haseł </h3>
+Wymusza się na użytkowniku, aby jego hasło było bezpieczne i trudne do złamania za pomocą metody brute force. Składają się na to zasady:
+<ul>
+<li>co najmniej 8 znaków</li>
+<li>co najmniej 1 duża litera</li>
+<li>co najmniej 1 znak specjalny</li>
+</ul>
+Każde z tych wymagań sprawia, że złamanie hasła staje się w tych latach praktycznie niemożliwe.
+<br>
+Aby zabezpieczyć hasła przed szybkim todo hasła są przechowywane w bazie danych w postaci zahashowanych za pomocą algorytmu SHA256 ciągu znaków.
+Dodatkowo wzbogaconych o sól kryptograficzną (w tym przypadku jest to losowy ciąg 16 znaków) dodawaną po właściwym haśle.
+
+<h3> Bezpieczeństwo przed niepowołanym dostępem </h3>
+Bezpieczeństwa przed niepowołanym dostępem pilnuje autoryzacja za pomocą systemu ról. O rolach można przeczytać w zakładce Role.
+</div>
+</body>
+</html>

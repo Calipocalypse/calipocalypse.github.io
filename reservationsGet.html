@@ -1,0 +1,322 @@
+<html>
+<head>
+<link type="text/css" rel="Stylesheet" href="page.css" />
+<link type="text/css" rel="Stylesheet" href="endpoints.css" />
+</head>
+<body>
+<div class="content">
+<div>
+<h2> GET | Zwraca wszystkie rezerwacje ograniczone przez zakres czasu</h2>
+	<div>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold" colspan="3">Zwraca wszystkie rezerwacje ograniczone przez zakres czasu</th>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Token</td>
+			<td class="endpoint-content" colspan="2">Wymagany</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Role</td>
+			<td class="endpoint-content" colspan="2">Administrator, Operator</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Metoda</td>
+			<td class="endpoint-content" colspan="2">GET</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">URL</td>
+			<td class="endpoint-content" colspan="2">[host]/reservations</td>
+		  </tr>
+		</table>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Body [JSON]</td>
+			<td class="endpoint-bold">Response [JSON]</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">
+<pre>
+{
+	"StartDate": "12/12/2022 00:00",
+	"EndDate": "12/12/2023 19:59"
+}
+			</pre>
+			<td class="endpoint-content">
+			<pre>
+[
+	{
+		"id": "711c434a-45c0-4155-068e-08db079f958b",
+		"poolTable": null,
+		"poolTableId": "bf9e1813-3329-47fb-ab87-0ede3d9df9b2",
+		"bookerName": "Johny K Asteroid2",
+		"email": "johnykasteroid@gmail.com",
+		"phoneNumber": "690 690 690",
+		"createdDate": "2023-02-05T18:36:59.3077842",
+		"startDate": "2022-12-17T15:55:00",
+		"endDate": "2022-12-17T15:55:00",
+		"isPaid": true,
+		"note": "to jest notatka na temat rezerwacji"
+	},
+	{
+		"id": "ba7027a9-da0d-492f-0690-08db079f958b",
+		"poolTable": null,
+		"poolTableId": "bf9e1813-3329-47fb-ab87-0ede3d9df9b2",
+		"bookerName": "Johny K Asteroid3",
+		"email": null,
+		"phoneNumber": null,
+		"createdDate": "2023-02-05T18:37:44.076604",
+		"startDate": "2022-12-17T12:55:00",
+		"endDate": "2022-12-17T15:55:00",
+		"isPaid": false,
+		"note": null
+	}
+]</pre>
+			</td>
+		  </tr>
+		</table>
+		  <BR>
+		  <BR>
+		  <BR>
+			<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Status</td>
+			<td class="endpoint-content">200 OK</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		  </table>
+	</div>
+</div>
+</div>
+<div>
+<h2> GET | Zwraca konkretną rezerwację</h2>
+	<div>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold" colspan="3">Zwraca konkretną rezerwację</th>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Token</td>
+			<td class="endpoint-content" colspan="2">Wymagany</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Role</td>
+			<td class="endpoint-content" colspan="2">Administrator, Operator</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Metoda</td>
+			<td class="endpoint-content" colspan="2">GET</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">URL</td>
+			<td class="endpoint-content" colspan="2">[host]/reservations/[id]</td>
+		  </tr>
+		</table>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Response [JSON]</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content" colspan="2">
+			<pre>
+{
+	"id": "711c434a-45c0-4155-068e-08db079f958b",
+	"poolTable": null,
+	"poolTableId": "bf9e1813-3329-47fb-ab87-0ede3d9df9b2",
+	"bookerName": "Johny K Asteroid2",
+	"email": "johnykasteroid@gmail.com",
+	"phoneNumber": "690 690 690",
+	"createdDate": "2023-02-05T18:36:59.3077842",
+	"startDate": "2022-12-17T15:55:00",
+	"endDate": "2022-12-17T15:55:00",
+	"isPaid": true,
+	"note": "to jest notatka na temat rezerwacji"
+}</pre>
+			</td>
+		  </tr>
+		</table>
+		  <BR>
+		  <BR>
+		  <BR>
+			<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Status</td>
+			<td class="endpoint-content">200 OK</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		  </table>
+			<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Status</td>
+			<td class="endpoint-content">404 NotFound</td>
+			<td style="width: 100%;" class="endpoint-content">W przypadku gdy rezerwacja o danym id nie istnieje</td>
+		  </tr>
+		  </table>
+	</div>
+</div>
+</div>
+<div>
+<h2> GET | Zwraca wszystkie rezerwacje ograniczone przez daty wraz ze szczegółami</h2>
+	<div>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold" colspan="3">Zwraca wszystkie rezerwacje ograniczone przez daty wraz ze szczegółami</th>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Token</td>
+			<td class="endpoint-content" colspan="2">Wymagany</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Role</td>
+			<td class="endpoint-content" colspan="2">Administrator, Operator</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Metoda</td>
+			<td class="endpoint-content" colspan="2">GET</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">URL</td>
+			<td class="endpoint-content" colspan="2">[host]/reservations/details</td>
+		  </tr>
+		</table>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Body [JSON]</td>
+			<td class="endpoint-bold">Response [JSON]</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">
+			<pre>
+{
+	"StartDate": "12/12/2022 00:00",
+	"EndDate": "12/12/2023 19:59"
+}</pre>
+			</td>
+			<td class="endpoint-content">
+			<pre>
+[
+	{
+		"reservationId": "711c434a-45c0-4155-068e-08db079f958b",
+		"reservationBookerName": "Johny K Asteroid2",
+		"reservationBookerEmail": "johnykasteroid@gmail.com",
+		"reservationBookerPhoneNumber": "690 690 690",
+		"reservationCreatedDate": "05/02/2023 18:36",
+		"reservationStartDate": "17/12/2022 15:55",
+		"reservationEndDate": "17/12/2022 15:55",
+		"tableId": "bf9e1813-3329-47fb-ab87-0ede3d9df9b2",
+		"tableName": "Stół 1",
+		"tableDescription": "Obo2k okna",
+		"costId": "07d3f7fb-8bbf-4da1-ae61-013a9e91b511",
+		"costName": "Koszt 2",
+		"costValue": 157.99,
+		"isPaid": "True",
+		"note": "to jest notatka na temat rezerwacji"
+	},
+	{
+		"reservationId": "ba7027a9-da0d-492f-0690-08db079f958b",
+		"reservationBookerName": "Johny K Asteroid3",
+		"reservationBookerEmail": null,
+		"reservationBookerPhoneNumber": null,
+		"reservationCreatedDate": "05/02/2023 18:37",
+		"reservationStartDate": "17/12/2022 12:55",
+		"reservationEndDate": "17/12/2022 15:55",
+		"tableId": "bf9e1813-3329-47fb-ab87-0ede3d9df9b2",
+		"tableName": "Stół 1",
+		"tableDescription": "Obo2k okna",
+		"costId": "07d3f7fb-8bbf-4da1-ae61-013a9e91b511",
+		"costName": "Koszt 2",
+		"costValue": 157.99,
+		"isPaid": "False",
+		"note": null
+	}
+]</pre>
+			</td>
+		  </tr>
+		</table>
+		  <BR>
+		  <BR>
+		  <BR>
+			<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Status</td>
+			<td class="endpoint-content">200 OK</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		  </table>
+	</div>
+</div>
+</div>
+<div>
+<h2> GET | Zwraca konkretną rezerwację wraz ze szczegółami</h2>
+	<div>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold" colspan="3">Zwraca konkretną rezerwację wraz ze szczegółami</th>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Token</td>
+			<td class="endpoint-content" colspan="2">Wymagany</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Role</td>
+			<td class="endpoint-content" colspan="2">Administrator, Operator</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Metoda</td>
+			<td class="endpoint-content" colspan="2">GET</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">URL</td>
+			<td class="endpoint-content" colspan="2">[host]/reservations/[id]/details</td>
+		  </tr>
+		</table>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Response [JSON]</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content" colspan="2">
+			<pre>
+{
+	"reservationId": "711c434a-45c0-4155-068e-08db079f958b",
+	"reservationBookerName": "Johny K Asteroid2",
+	"reservationBookerEmail": "johnykasteroid@gmail.com",
+	"reservationBookerPhoneNumber": "690 690 690",
+	"reservationCreatedDate": "05/02/2023 18:36",
+	"reservationStartDate": "17/12/2022 15:55",
+	"reservationEndDate": "17/12/2022 15:55",
+	"tableId": "bf9e1813-3329-47fb-ab87-0ede3d9df9b2",
+	"tableName": "Stół 1",
+	"tableDescription": "Obo2k okna",
+	"costId": "07d3f7fb-8bbf-4da1-ae61-013a9e91b511",
+	"costName": "Koszt 2",
+	"costValue": 157.99,
+	"note": "to jest notatka na temat rezerwacji"
+}</pre>
+			</td>
+		  </tr>
+		</table>
+		  <BR>
+		  <BR>
+		  <BR>
+			<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Status</td>
+			<td class="endpoint-content">200 OK</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		  </table>
+			<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Status</td>
+			<td class="endpoint-content">404 NotFound</td>
+			<td style="width: 100%;" class="endpoint-content">W przypadku gdy rejestracja o danym id nie istnieje</td>
+		  </tr>
+		  </table>
+	</div>
+</div>
+</div>
+
+
+</body>
+</html>

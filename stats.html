@@ -1,0 +1,149 @@
+<html>
+<head>
+<link type="text/css" rel="Stylesheet" href="page.css" />
+<link type="text/css" rel="Stylesheet" href="endpoints.css" />
+</head>
+<body>
+<div class="content">
+<h1> Statystyki </h1>
+<BR>
+	
+<div class="content">
+<div>
+<h2> GET | Zwraca średnią ilość rezerwacji na dzień tygodnia</h2>
+	<div>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold" colspan="3">Zwraca średnią ilość rezerwacji na dzień tygodnia</th>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Token</td>
+			<td class="endpoint-content" colspan="2">Wymagany</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Role</td>
+			<td class="endpoint-content" colspan="2">Administrator, Operator</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Metoda</td>
+			<td class="endpoint-content" colspan="2">GET</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">URL</td>
+			<td class="endpoint-content" colspan="2">[host]/statistics/transactions/average/daysofweek</td>
+		  </tr>
+		</table>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Response [JSON]</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">
+			<pre>
+[
+	{
+		"dayOfWeek": "Sunday",
+		"number": "0,25"
+	},
+	{
+		"dayOfWeek": "Monday",
+		"number": "0,25"
+	},
+	{
+		"dayOfWeek": "Tuesday",
+		"number": "0,25"
+	},
+	{
+		"dayOfWeek": "Wednesday",
+		"number": "0,25"
+	},
+	{
+		"dayOfWeek": "Thursday",
+		"number": "0,25"
+	},
+	{
+		"dayOfWeek": "Friday",
+		"number": "0,5"
+	},
+	{
+		"dayOfWeek": "Saturday",
+		"number": "1,5"
+	}
+]</pre>
+			</td>
+		  </tr>
+		</table>
+		  <BR>
+		  <BR>
+		  <BR>
+			<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Status</td>
+			<td class="endpoint-content">200 OK</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		  </table>
+	</div>
+</div>
+<div>
+<h2> GET | Zwraca liczbę rezerwacji w danym przedziale czasowym </h2>
+<div>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold" colspan="3">Zwraca liczbę rezerwacji w danym przedziale czasowym</th>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Token</td>
+			<td class="endpoint-content" colspan="2">Wymagany</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Role</td>
+			<td class="endpoint-content" colspan="2">Administrator, Operator</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Metoda</td>
+			<td class="endpoint-content" colspan="2">GET</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">URL</td>
+			<td class="endpoint-content" colspan="2">[host]/statistics/transactions/count</td>
+		  </tr>
+		</table>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Body [JSON]</td>
+			<td class="endpoint-bold">Response [JSON]</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">
+			<pre>
+{
+	"StartDate": "12/12/2022 00:00",
+	"EndDate": "12/12/2023 19:59"
+}</pre>
+			</td>
+			<td class="endpoint-content">
+			<pre>
+{
+	"number": 126
+}</pre>
+			</td>
+		  </tr>
+		</table>
+		  <BR>
+		  <BR>
+		  <BR>
+			<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Status</td>
+			<td class="endpoint-content">200 OK</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		  </table>
+	</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

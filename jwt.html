@@ -1,0 +1,46 @@
+<html>
+<head>
+<link type="text/css" rel="Stylesheet" href="page.css" />
+<link type="text/css" rel="Stylesheet" href="jwt.css" />
+</head>
+<body>
+<div class="content">
+<h1> JWT </h1>
+<h2> Zawartość tokena JWT w projekcie </h2>
+<h3> Część nagłówkowa </h3>
+<pre class="token-header">
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+</pre>
+<h3> Zawartość właściwa tokena </h3>
+<pre class="token-payload">
+{
+  "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "Maciej",
+  "http://schemas.microsoft.com/ws/2008/06/identity/claims/role": "Administrator",
+  "exp": 1675485682,
+  "iss": "https://localhost:44368/",
+  "aud": "https://localhost:44368/"
+}
+</pre>
+<h4> Claims </h4>
+Oprócz niezbędnych do weryfikacji tokena informacji oraz czasu wygaśnięcia tokena, treść właściwa zawiera również dwa claimy:
+<ul>
+<li> Nazwę użytkownika posiadacza tokena </li>
+<li> Rola uprawnień posiadacza tokena </li>
+</ul>
+<h4> Zmienna exp </h4>
+Token zawiera również zmienną exp. Jest to czas wygaśnięcia tokena. Zawsze czas ważności tokena w projekcie wynosi 8 godzin. Oznacza to, że aby utrzymać sesję frontend, musi
+użyć standardowej procedury logowania.
+<br>
+<h4> Issuer i Audience </h4>
+
+<h3> Podpis tokena </h3>
+<pre class="token-signature">
+DTNv7j0TuYARzmNMmWXo6xKvM4o6nv/aXi6ryX38ZH+L1bkrnD13bOQ8JAUmHCBq7Iy7otZcyAagBLHVKvvYaI<br>pmMuxmARQ97jUVG16Jkpkp1wXOPsrF9zwew6TpczyHkHgX5EuLg2MeBuiA/qJACs1J0apruOOJCg/gOtkjB4c=)
+</pre>
+Niezbędny fragment do weryfikacji tokena. Na potrzeby bezpieczeństwa tutaj zmodyfikowany.
+</div>
+</body>
+</html>

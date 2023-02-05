@@ -1,0 +1,206 @@
+*
+{
+	color: white;
+	font-family: Calibri;
+	font-size: 15px;
+}
+
+body
+{
+	background-image: url('https://preview.redd.it/mofx10q4h8n81.jpg?width=2560&format=pjpg&auto=webp&v=enabled&s=1f0792808557c4621c7276d0d2a5e71648a9b93a');
+	margin: 0
+}
+
+.lower-side
+{
+  margin: 0px 35px 0px 35px;
+  display: flex;
+  min-height: 80%;
+  height: 90%;
+}
+
+.left-side-name
+{
+	background-color: black;
+	text-align: center;
+	border-radius: 5px;
+	margin: 35px 35px 0px 35px;
+	color: orange;
+	background-color: #000000aa;
+	font-size: 25px;
+	border-radius: 2px 2px 2px 2px;
+	font-weight: bold;
+}
+
+
+.left-side-container
+{
+}
+
+.left-side-backend
+{
+	padding: 0 0 15 0;
+	margin: 5;
+	background-color: #000000aa;
+	text-align: center;
+	border-radius: 5px;
+	margin: 15px 35px 0px 0px;
+}
+
+.left-side-user
+{
+	padding: 0 0 15 0;
+	margin: 5;
+	background-color: #000000aa;
+	text-align: center;
+	border-radius: 5px;
+	margin: 15px 35px 0px 0px;
+}
+
+.left-side-wdrozenie
+{
+	padding: 0 0 15 0;
+	margin: 5;
+	background-color: #000000aa;
+	text-align: center;
+	border-radius: 5px;
+	margin: 15px 35px 0px 0px;
+}
+
+.left-side-utrzymanie
+{
+	padding: 0 0 15 0;
+	margin: 5;
+	background-color: #000000aa;
+	text-align: center;
+	border-radius: 5px;
+	margin: 15px 35px 0px 0px;
+}
+
+
+.left-side-container h2
+{
+	text-align: left;
+	text-indent: 10px;
+	margin: 0;
+	font-size: 25px;
+}
+
+.left-side-container h3
+{
+	text-align: left;
+	text-indent: 30px;
+	font-size: 20px;
+	margin: 0;
+	padding-right: 5px;
+}
+
+.left-side-container h4
+{
+	text-align: left;
+	text-indent: 60px;
+	margin: 0;
+	padding-right: 5px;
+}
+
+.left-side-container h5
+{
+	text-align: center;
+	padding: 15px 15px 0px 15x;
+	margin: 0;
+	margin-left: 3px;
+	color: gray;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+.left-side-backend h4:hover
+{
+	background: #8f00ffaa;
+}
+
+.left-side-backend h3:hover
+{
+	background: #8f00ffaa;
+}
+
+.left-side-backend h2:hover
+{
+	background: #8f00ffaa;
+}
+
+.left-side-user h4:hover
+{
+	background: #ff0000aa;
+}
+
+.left-side-user h3:hover
+{
+	background: #ff0000aa;
+}
+
+.left-side-user h2:hover
+{
+	background: #ff0000aa;
+}
+
+.left-side-wdrozenie h4:hover
+{
+	background: #FFA500AA;
+}
+
+.left-side-wdrozenie h3:hover
+{
+	background: #FFA500AA;
+}
+
+.left-side-wdrozenie h2:hover
+{
+	background: #FFA500AA;
+}
+
+.left-side-utrzymanie h4:hover
+{
+	background: #808080aa;
+}
+
+.left-side-utrzymanie h3:hover
+{
+	background: #808080aa;
+}
+
+.left-side-utrzymanie h2:hover
+{
+	background: #808080aa;
+}
+
+.menu-clickable:hover
+{
+	cursor: pointer
+}
+
+.content-side
+{
+	background-color: #000000aa;
+	flex-grow: 1;
+	margin: 15px 0px 0px 0px;
+	text-align: justify;
+	padding: 15px;
+	font-size: 20px;
+}
+
+.ramka
+{
+	max-width: 100%;
+	width: 100%;
+}
+
+iframe{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

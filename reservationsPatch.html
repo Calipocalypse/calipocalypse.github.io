@@ -1,0 +1,101 @@
+<html>
+<head>
+<link type="text/css" rel="Stylesheet" href="page.css" />
+<link type="text/css" rel="Stylesheet" href="endpoints.css" />
+</head>
+<body>
+<div class="content">
+<div>
+<h2 class="patch"> PATCH | Modyfikuje konkretną rezerwację</h2>
+	<div>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-patch" colspan="3">Modyfikuje konkretną rezerwację</th>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-patch">Token</td>
+			<td class="endpoint-content" colspan="2">Wymagany</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-patch">Role</td>
+			<td class="endpoint-content" colspan="2">Administrator, Operator</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-patch">Metoda</td>
+			<td class="endpoint-content" colspan="2">PATCH</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold-patch">URL</td>
+			<td class="endpoint-content" colspan="2">[host]/pooltables/[id]</td>
+		  </tr>
+		</table>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-patch" colspan="2">Body [Query]</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">PoolTableId</td>
+			<td class="endpoint-content">[id]</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">BookerName</td>
+			<td class="endpoint-content">Zdzisław Walipięta</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">Email</td>
+			<td class="endpoint-content">zdzislaw.walipieta@szympans.pl</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">PhoneNumber</td>
+			<td class="endpoint-content">+48 600 500 300</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">StartDate</td>
+			<td class="endpoint-content">17/12/2022 14:00</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">EndDate</td>
+			<td class="endpoint-content">17/12/2022 15:00</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">IsPaid</td>
+			<td class="endpoint-content">true</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">Note</td>
+			<td class="endpoint-content">Treść notatki</td>
+		  </tr>
+		</table>
+		  <BR>
+		  <BR>
+		  <BR>
+		  
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-patch">Status</td>
+			<td class="endpoint-content">200 OK</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		 </table>
+		 <table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-patch">Status</td>
+			<td class="endpoint-content">400 BadRequest</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		 </table>
+		 <table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold-patch">Status</td>
+			<td class="endpoint-content">404 NotFound</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		 </table>
+		 
+	</div>
+</div>
+</div>
+
+
+</body>
+</html>

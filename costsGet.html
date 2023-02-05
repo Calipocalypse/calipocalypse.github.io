@@ -1,0 +1,130 @@
+<html>
+<head>
+<link type="text/css" rel="Stylesheet" href="page.css" />
+<link type="text/css" rel="Stylesheet" href="endpoints.css" />
+</head>
+<body>
+<div class="content">
+<div>
+<h2> GET | Zwraca wszystkie koszta</h2>
+	<div>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold" colspan="3">Zwraca wszystkie koszta</th>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Token</td>
+			<td class="endpoint-content" colspan="2">Wymagany</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Role</td>
+			<td class="endpoint-content" colspan="2">Administrator, Operator</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Metoda</td>
+			<td class="endpoint-content" colspan="2">GET</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">URL</td>
+			<td class="endpoint-content" colspan="2">[host]/costs</td>
+		  </tr>
+		</table>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Response [JSON]</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content">
+			<pre>
+[
+	{
+		"id": "6086a795-01a8-4042-93cf-528cec4518d9",
+		"name": "Koszt 2",
+		"costValue": 157.99
+	},
+	{
+		"id": "61ce70fb-4464-44d0-bb5d-c4d9bd167359",
+		"name": "Koszt 1",
+		"costValue": 47.99
+	}
+]
+			</pre>
+			</td>
+		  </tr>
+		</table>
+		  <BR>
+		  <BR>
+		  <BR>
+			<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Status</td>
+			<td class="endpoint-content">200 OK</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		  </table>
+	</div>
+</div>
+</div>
+<div>
+<h2> GET | Zwraca konkretny koszt</h2>
+	<div>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold" colspan="3">Zwraca konkretny koszt</th>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Token</td>
+			<td class="endpoint-content" colspan="2">Wymagany</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Role</td>
+			<td class="endpoint-content" colspan="2">Administrator, Operator</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">Metoda</td>
+			<td class="endpoint-content" colspan="2">GET</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-bold">URL</td>
+			<td class="endpoint-content" colspan="2">[host]/costs/[id]</td>
+		  </tr>
+		</table>
+		<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Response [JSON]</td>
+		  </tr>
+		  <tr>
+			<td class="endpoint-content" colspan="2">
+			<pre>
+{
+	"id": "61ce70fb-4464-44d0-bb5d-c4d9bd167359",
+	"name": "Koszt 1",
+	"costValue": 47.99
+}</pre>
+			</td>
+		  </tr>
+		</table>
+		  <BR>
+		  <BR>
+		  <BR>
+			<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Status</td>
+			<td class="endpoint-content">200 OK</td>
+			<td style="width: 100%;" class="endpoint-content"></td>
+		  </tr>
+		  </table>
+			<table class="endpoint">
+		  <tr>
+			<td class="endpoint-bold">Status</td>
+			<td class="endpoint-content">404 NotFound</td>
+			<td style="width: 100%;" class="endpoint-content">W przypadku gdy koszt o danym id nie istnieje</td>
+		  </tr>
+		  </table>
+	</div>
+</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+Wymagania Minimalne:
+
+Przegladarki:
+Chrome w wersji 100.0.4896.60
+Firefox w wersji 79.0
+Edge w wersji 94.0.99.9
+Safari w wersji 13.1.1
+iOS w wersji 12.5.6
+
+Srodowisko:
+npm w wersji 6.11.0
+Angular wersja 8.0.0
+NodeJs 19.4.0
+TypeScript 4.9.4
+
+Minimalna ilosc pamieci RAM: 4GB
+
+Wymagania Zalecane:
+
+Przegladarki:
+Chrome w wersji 100.0.5414.75
+Firefox w wersji 109.0
+Edge w wersji 109.0.1518.61
+Safari w wersji 14.0
+iOS w wersji 16.2
+
+Srodowisko:
+npm w wersji 7.5.6
+Angular wersja 14.0
+NodeJs 19.6.0
+TypeScript 4.9.4
+
+Zalecana ilosc pamieci RAM: 16GB
+
+
+Uzyte biblioteki i ich wersje:
+"@angular/animations": "^15.1.0",
+    "@angular/common": "^15.1.0",
+    "@angular/compiler": "^15.1.0",
+    "@angular/core": "^15.1.0",
+    "@angular/forms": "^15.1.0",
+    "@angular/platform-browser": "^15.1.0",
+    "@angular/platform-browser-dynamic": "^15.1.0",
+    "@angular/router": "^15.1.0",
+    "angular-bootstrap-datetimepicker": "^4.0.2",
+    "bootstrap": "^3.4.1",
+    "moment": "^2.29.4",
+    "open-iconic": "^1.1.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.12.0"
+    "@angular-devkit/build-angular": "^15.1.2",
+    "@angular/cli": "~15.1.2",
+    "@angular/compiler-cli": "^15.1.0",
+    "@types/jasmine": "~4.3.0",
+    "jasmine-core": "~4.5.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "typescript": "~4.9.4"
+
+
+SKRYPTY:
+"scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+
+
+

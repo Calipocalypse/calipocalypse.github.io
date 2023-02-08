@@ -1,0 +1,72 @@
+<html>
+<head>
+<link type="text/css" rel="Stylesheet" href="page.css" />
+</head>
+<body>
+<div class="content">
+<h1 style="text-decoration: underline; text-decoration-color: orange"> Wdrożenie </h1>
+<h2>Prezentacja i przekazanie aplikacji</h2>
+Aplikacja zostanie przekazana po prezentacji na środowisku testowym wersji spełniającej wszystkie wymogi funkcjonalne
+oraz po konsultacji i zatwierdzeniu przez odbiorcę.
+
+<h2>Prezentacja wersji w środowisku testowym <h2>
+<h3>Etap pierwszy</h3>
+<ul>
+<li>Założenie pierwszego konta administratora</li>
+<li>Zalogowanie do utworzonego konta</li>
+<li>Dodanie dwóch poprawnych typów kosztów</li>
+<li>Dodanie dwóch stołów i przypisanie do niego jednego z dwóch utworzonych typow kosztów</li>
+<li>Edycja nazwy, opisu oraz zmiana typu kosztu dla jednego stołu</li>
+<li>Stworzenie poprawnej rezerwacji</li>
+<li>Odnalezienie stworzenej rezerwacji w harmonogramie</li>
+<li>Uruchomienie panelu z informacjami o stworzonej rezerwacji</li>
+<li>Edycja rezerwacji, zmiany godzin, stołu i szczegółów</li>
+<li>Usunięcie rezerwacji</li>
+<li>Usunięcie stołu</li>
+<li>Usunięcie kosztu</li>
+<li>Dodanie notatki w zakładce Notes</li>
+<li>Edycja stworzonej notatki</li>
+<li>Usunięcie stworzonej notatki</li>
+<li>Dodanie konta operatora</li>
+</ul>
+
+<h3>Etap drugi</h3>
+<ul>
+<li>Zalogowanie się do konta operatora</li>
+<li>Powtórzenie kroku pierwszego na uprawnieniach operatora</li>
+</ul>
+<h3>Etap trzeci</h3>
+<ul>
+<li>Zalogowanie się do konta administratora</li>
+<li>Usunięcie konta operatora</li>
+</ul>
+
+Jeśli wymagania zostaną spełnione i prezentacja odbędzie się z oceną zadowalającą aplikacja zostaje przekazana w ręce użytkowników.
+<br>
+Zostaną wdrożone dwie osoby: 
+<ul><li>Administrator będacy osobą zarządzająca salonem</li>
+<li>Jeden z operatorów który następnie przeszkoli pozostałych pracowników</li>
+</ul>
+<h2>Wstępne warunki techniczne do przeprowadzenia odbioru</h2>
+<ul>
+<li>Zainstalowana przeglądarka spełniająca przynajmniej minimalne wymagania środowiskowe</li>
+<li>Serwer hostujący backend aplikacji oraz bazę danych</li>
+<li>Serwer hostujący front-end aplikacji (zbudowane statyczne pliki z Angulara)</li>
+<li>Sprawna komunikacja między komputerem klienta/użytkownika a serwerem backendowym</li>
+oraz front-endem</li>
+</ul>
+<h2>Wdrożeniowe wymogi biznesowe</h2>
+<ul>
+<li>Dane początkowe są puste, pierwszy użytkownik będący administratorem tworzy w obecności technika konto które następnie może być usunięte tylko z poziomu bazy</li>
+<li>Nie ma konieczności migracji danych z innego systemu</li>
+<li>Brak wymagań odnośnie specjalnego przygotowania użytkowników podczas odbioru aplikacji</li>
+<li>Do wdrożenia wymagana jest obecność dwóch osob, zarządcy salonu oraz jednego z operatorów</li>
+<li>Brak specjalnych wymagań związanych z wdrożeniem kolejnych osób</li>
+<li>Brak wymagania związanego z oczekiwaniem/synchronizacją z danymi zewnętrznymi</li>
+<li>Aplikacja zostaje postawiona na Serwerze otwartym na requesty z zewnątrz, który hostuje
+potrzebne części (Back-End + Front-End)</li>
+<li>Aplikacja jest uruchamiana przez użytkowników poprzez wejście na stronę internetową
+aplikacji</li>
+</ul>
+</body>
+</html>

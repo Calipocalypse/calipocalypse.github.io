@@ -66,6 +66,19 @@ a
 	margin: 0;
 }
 
+.dwa-inne
+{
+	background-color: #00ff0033;
+	width: fit-content;
+	padding: 5px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: lime;
+	border-radius: 7px;
+	margin-right: 15px;
+	margin: 0;
+}
+
 .cztery
 {
 	background-color: #ffa50033;
@@ -198,4 +211,17 @@ iframe
 .delete
 {
 	background-color: #ff000063;
+}
+
+.grid-container {
+  display: grid;
+  column-gap: 25px;
+  grid-template-columns: 50% 50%;
+  width: 80vw;
+}
+
+.grid-item 
+{
+  text-align: center;
+  align-self: center;
 }
